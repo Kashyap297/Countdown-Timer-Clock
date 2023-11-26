@@ -1,0 +1,114 @@
+main {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.font {
+    font-family: 'Playpen Sans', cursive;
+}
+
+.clr {
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.116);
+    border-radius: 16px;
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    rotate: 370deg;
+    border: none;
+}
+
+.straight {
+    rotate: -370deg;
+}
+
+.clock {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 800;
+    color: #ffffff;
+
+}
+
+input {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+input:focus {
+    border: none;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 700;
+    color: white;
+    top: 210px;
+    letter-spacing: 5px;
+}
+
+.btn {
+    background: rgba(255, 255, 255, 0.116);
+    border-radius: 16px;
+    backdrop-filter: blur(3.5px);
+    width: 100px;
+    font-size: 25px;
+    -webkit-backdrop-filter: blur(2.5px);
+    outline: none;
+}
+
+.start {
+    opacity: 0;
+    /* display: none; */
+    transform: translateY(-25px);
+    transition: all ease-in-out 0.5s;
+    color: white;
+    left: 23px;
+}
+
+.btn:hover .start {
+    opacity: 1;
+    /* display: block; */
+    transform: translateY(10px);
+    transition: all ease-in-out 0.5s;
+
+}
+
+.btn:active {
+    outline: none;
+}
